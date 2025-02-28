@@ -1,0 +1,108 @@
+comments & escape sequences:
+
+1- Single-line Comment (//) Used for short explanations
+2- Multi-line Comment (/* ... */) Used for longer explanations or to temporarily disable code.
+______________________________________________________________________________________________________________________
+
+Escaoe sequences: 
+
+1- \n	Newline (moves to the next line)	printf("Hello\nWorld!");
+2- \t	Tab space	printf("Hello\tWorld!");
+3- \\	Backslash (\)	printf("C:\\Program Files");
+4- \"	Double quote (")	printf("\"Hello, C!\"");
+5- \'	Single quote (')	printf("\'C Programming\'");
+6- \r	Carriage return (moves cursor to start of line)	printf("Hello\rWorld");
+7- \b	Backspace (deletes the previous character)	printf("Hello\b!");
+8- \f	Form feed (moves to the next page in printers)	Rarely used
+9- \a	Alarm (beep sound)	printf("\a");
+______________________________________________________________________________________________________________________
+Variables :
+
+data_type → Specifies the type of data (int, float, char, etc.).
+variable_name → Name of the variable.
+value → Initial value (optional).
+
+int          4           -2,147,483,648 to 2,147,483,647              	%d
+float	       4           3.4E-38 to 3.4E+38	                            %f
+double	     8	         1.7E-308 to 1.7E+308	                          %lf
+char	       1	          -128 to 127	                                  %c
+long int	   8	         -9 quintillion to +9 quintillion	              %ld
+short int	   2       	   -32,768 to 32,767	                            %hd
+
+Modifiers :
+
+short                 	(int)                             	Reduces memory size (2 bytes)
+long	                  (int, double)	                      Increases memory size
+signed	                (int, char)                        	Allows both positive & negative values
+unsigned	              (int, char)	                        Stores only positive values
+
+__________________________________________________________________________________________________________________________
+
+Data Types: 
+
+Array:    	                    Collection of elements of the same type
+Pointer:                       	Stores memory address of a variable
+Structure (struct):            	Groups different data types together
+Union	                          Similar to structure but shares memory
+
+_____________________________________________________________________________________________________________________________
+
+Arithmetic operators:
+
++	                  Addition	                                  a + b
+-                  	Subtraction	                                a - b
+*                  	Multiplication	                            a * b
+/                  	Division (quotient)                        	a / b
+%	                  Modulus (remainder)                        	a % b
+++	                Increment (adds 1)	                        a++ (post-increment) or ++a (pre-increment)
+--	                Decrement (subtracts 1)	                    a-- (post-decrement) or --a (pre-decrement)
+
+______________________________________________
+
+Pre-increment	            ++a                                  	Increment a first, then use it
+Post-increment	          a++	                                  Use a first, then increment it
+Pre-decrement	            --a	                                  Decrement a first, then use it
+Post-decrement           	a--                                 	Use a first, then decrement it
+ ___________________________________________________________________________________________________________________________________________   
+
+User Input: 
+
+scanf()                 →           Used for numbers, characters, and strings (single word).
+%d, %f, %c, %s          →           Common format specifiers.
+fgets()                 →           Used for multi-word string input.
+
+_______________________________________________________________________________________________________________________________________________
+
+If statement :
+
+Basic if             →             Executes if the condition is true.
+if-else              →             Executes different blocks based on the condition.
+if-else if-else      →             Checks multiple conditions.
+Nested if            →             if inside another if.
+
+________________________________________________________________________________________________________________________________________________
+
+Logical Operators:
+
+AND (&&)               →             Returns true if both conditions are true.
+OR (||)                →             Returns true if at least one condition is true.
+NOT (!)                →             Reverses the condition (true becomes false, false becomes true).
+
+___________________________________________________________________________________________________________________________________________________
+
+Functions:
+
+ Why:                Avoid code repetition
+                     Improve code organization
+                     Make debugging easier
+                     Enable modular programming
+
+
+
+Types:                Basic Function	
+                      With Parameters	
+                      With Return 
+                      With Multiple Parameters	
+                      Recursive Function	
+                      Void Function
+_____________________________________________________________________________________________________________________________________________________
