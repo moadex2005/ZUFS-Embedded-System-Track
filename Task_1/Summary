@@ -22,16 +22,16 @@ data_type → Specifies the type of data (int, float, char, etc.).
 variable_name → Name of the variable.
 value → Initial value (optional).
 
-int          4           -2,147,483,648 to 2,147,483,647              	%d
-float	       4           3.4E-38 to 3.4E+38	                            %f
-double	     8	         1.7E-308 to 1.7E+308	                          %lf
-char	       1	          -128 to 127	                                  %c
-long int	   8	         -9 quintillion to +9 quintillion	              %ld
-short int	   2       	   -32,768 to 32,767	                            %hd
+int          4           -2,147,483,648 to 2,147,483,647              %d
+float	       4           3.4E-38 to 3.4E+38	                          %f
+double	      8	         1.7E-308 to 1.7E+308	                         %lf
+char	        1	          -128 to 127	                                 %c
+long int	    8	         -9 quintillion to +9 quintillion	             %ld
+short int	   2       	   -32,768 to 32,767	                           %hd
 
 Modifiers :
 
-short                 	(int)                             	Reduces memory size (2 bytes)
+short                 	(int)                              	Reduces memory size (2 bytes)
 long	                  (int, double)	                      Increases memory size
 signed	                (int, char)                        	Allows both positive & negative values
 unsigned	              (int, char)	                        Stores only positive values
@@ -49,20 +49,20 @@ ________________________________________________________________________________
 
 Arithmetic operators:
 
-+	                  Addition	                                  a + b
++	                  Addition	                                   a + b
 -                  	Subtraction	                                a - b
-*                  	Multiplication	                            a * b
+*                  	Multiplication	                             a * b
 /                  	Division (quotient)                        	a / b
 %	                  Modulus (remainder)                        	a % b
-++	                Increment (adds 1)	                        a++ (post-increment) or ++a (pre-increment)
---	                Decrement (subtracts 1)	                    a-- (post-decrement) or --a (pre-decrement)
+++	                Increment (adds 1)	                          a++ (post-increment) or ++a (pre-increment)
+--	                Decrement (subtracts 1)	                     a-- (post-decrement) or --a (pre-decrement)
 
 ______________________________________________
 
-Pre-increment	            ++a                                  	Increment a first, then use it
-Post-increment	          a++	                                  Use a first, then increment it
-Pre-decrement	            --a	                                  Decrement a first, then use it
-Post-decrement           	a--                                 	Use a first, then decrement it
+Pre-increment	           ++a                                 	Increment a first, then use it
+Post-increment	          a++	                                 Use a first, then increment it
+Pre-decrement	           --a	                                 Decrement a first, then use it
+Post-decrement          	a--                                 	Use a first, then decrement it
  ___________________________________________________________________________________________________________________________________________   
 
 User Input: 
@@ -106,3 +106,39 @@ Types:                Basic Function
                       Recursive Function	
                       Void Function
 _____________________________________________________________________________________________________________________________________________________
+
+For loops:
+
+EX:     for(initialization; condition; update) {
+                  // Code to execute
+            }
+
+Initialization:  Executes once before the loop starts.
+Condition:       The loop runs as long as this is true.
+Update:          Changes the loop variable after each iteration.
+
+________________________________________________________________________________________________________________________________________________________
+
+While Loops: 
+
+EX:  while(condition) {
+    // Code to execute
+}
+
+Condition:  The loop runs as long as this is true.
+If the condition is false at the start, the loop never runs.
+
+
+do............while loop: 
+
+EX: do {
+    // Code to execute
+} while(condition);
+
+
+The block executes first, then checks the condition.
+If the condition is true, the loop runs again.
+If the condition is false, the loop stops.
+___________________________________________________________________________________________________________________________________________________________
+
+
