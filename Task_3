@@ -1,0 +1,34 @@
+Sign Modifiers (signed & unsigned)
+
+
+signed int x = -10; // Can store negative values
+
+unsigned int y = 250; // Cannot store negative values
+______________________________________________________________________________________________________________________________________
+
+Size Modifiers (short & long)
+
+
+short a = 100; // Typically 2 bytes
+
+long b = 1000000; // Typically 4 or 8 bytes
+
+________________________________________________________________________________________________________________________________________
+
+Storage Classes
+
+AUTO: EX
+
+void func() {
+    auto int num = 10; // Only exists inside this function
+}
+
+
+_____________________________________________________________________
+
+EXTERN: EX
+
+extern int globalVar; // Declared in another file
+_________________________________________________________________
+
+
