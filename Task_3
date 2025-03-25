@@ -31,4 +31,79 @@ EXTERN: EX
 extern int globalVar; // Declared in another file
 _________________________________________________________________
 
+static Keyword: EX
+
+
+void counter() {
+    static int count = 0; // Retains value between calls
+    count++;
+    printf("Count: %d\n", count);
+}
+
+int main() {
+    counter();
+    counter();
+    return 0;
+}
+
+____________________________________________________________________
+
+const Keyword: EX
+
+#include <stdio.h>
+
+int main() {
+    const int x = 10;
+    // x = 20;  //  Error: Assignment of read-only variable
+    printf("%d\n", x);
+    return 0;
+}
+
+____________________________________________________________________
+
+volatile : EX
+
+
+volatile int flag = 0; // Flag might be modified by an interrupt
+
+void interruptHandler() {
+    flag = 1; // Simulating external modification
+}
+
+int main() {
+    while (!flag) { // Without volatile, compiler might optimize this into an infinite loop
+        // Waiting for flag change
+    }
+    printf("Flag changed!\n");
+    return 0;
+}
+
+__________________________________________________________________________
+ Pointer Notes
+
+
+int *ptr; → Declares a pointer to an integer.
+
+ptr = &var; → Stores the address of var in ptr.
+
+*ptr → Dereferences the pointer (gets the value at that address).
+__________________________________________________________________________
+
+ Pointer Types:
+
+int *ptr; → Pointer to int
+
+float *ptr; → Pointer to float
+
+char *ptr; → Pointer to char
+__________________________________________________________________________
+
+ NULL Pointers:
+
+int *ptr = NULL; → Pointer that doesn’t point to any valid memory.
+__________________________________________________________________________
+
+ Void Pointers:
+
+void *ptr; → Generic pointer (can point to any data type).
 
