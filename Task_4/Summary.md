@@ -2,7 +2,7 @@
 
 A pointer is an object that refers (points) to some object or function, which simply means that a pointer is the memory address of some object or function.
 
-<div style="margin: auto; width: fit-content;"><img src="6 Pointers.assets/ptr.png" alt="pointer" style="zoom:200%;" /></div>
+<div style="margin: auto; width: fit-content;"><img src="Images/ptr.png" alt="pointer" style="zoom:200%;" /></div>
 
 <div style="font-size:14px; color: grey;">( Addresses here are shown as integers but in actual systems they will be in hexadecimal.) </div>
 
