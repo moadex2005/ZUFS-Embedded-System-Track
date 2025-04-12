@@ -28,7 +28,7 @@ Output
 
 Variables that store pointers are known as *pointer variables*. Their data type should be same as the object to which they are pointing.
 
-<img src="6 Pointers.assets/ptr_variable.png" alt="ptr_variable" style="zoom:200%;" />
+<img src="Images/ptr_variable.png" alt="ptr_variable" style="zoom:200%;" />
 
 Being a variable, a pointer variable also occupies some memory space. Different implementations of the language allocate different sizes to pointer variables, which restricts the number of memory locations that you may use or access. For example, using an 8-bit addressing mechanism will allow us to access 2^8^ (=256) unique memory addresses and a 64-bit addressing mechanism will allow us to access 2^64^ (=18446744073709551616) unique addresses.
 
